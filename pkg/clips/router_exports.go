@@ -1,6 +1,6 @@
 package clips
 
-// #cgo CFLAGS: -I ../../clips_source
+// #cgo CFLAGS: -I ../..
 // #cgo LDFLAGS: -L ../../clips_source -l clips -lm
 // #include <string.h>
 // #include <clips/clips.h>

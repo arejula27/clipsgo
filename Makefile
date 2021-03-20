@@ -16,6 +16,7 @@ clips_source:
 	wget -O /tmp/clips.zip $(CLIPS_SOURCE_URL)
 	mkdir -p clips_source
 	unzip -jo /tmp/clips.zip -d clips_source
+	ln -s clips_source clips
 
 ifeq ($(PLATFORM),Darwin) # macOS
 clips_source/libclips.so: clips_source
@@ -32,7 +33,10 @@ clips_source/libclips.so: clips_source
 	ld -G clips_source/*.o -o clips_source/libclips.so
 endif
 
-clips: clips_source/libclips.so
+clips_source/libclips.a:
+	$(MAKE) -j8 -f $(MAKEFILE_NAME) -C clips_source
+
+clips: clips_source/libclips.a
 
 clipsgo: clips
 	$(GO) build -o clipsgo ./cmd/clipsgo
@@ -56,5 +60,5 @@ install-clips: clips
 	-ldconfig -n -v $(SHARED_LIBRARY_DIR)
 
 clean:
-	-rm clips.zip
-	-rm -fr clips_source build dist clipspy.egg-info
+	-rm /tmp/clips.zip
+	-rm -fr clips_source clips build dist clipspy.egg-info

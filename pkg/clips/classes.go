@@ -13,7 +13,7 @@ package clips
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 */
 
-// #cgo CFLAGS: -I ../../clips_source
+// #cgo CFLAGS: -I ../..
 // #cgo LDFLAGS: -L ../../clips_source -l clips -lm
 // #include <clips/clips.h>
 import "C"

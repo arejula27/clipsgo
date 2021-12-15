@@ -1,4 +1,5 @@
 package main
+
 /*
    Copyright 2020 Keysight Technologies
 
@@ -16,7 +17,7 @@ package main
 */
 
 import (
-	"github.com/keysight/clipsgo/pkg/clips"
+	"github.com/arejula27/clipsgo/pkg/clips"
 )
 
 func main() {

@@ -64,7 +64,7 @@ Instances are instantiations of specific classes. They store values by name, sim
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -222,7 +222,7 @@ Ordered Facts represent information as a list of elements. There is no explicit 
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -253,7 +253,7 @@ would likely lead to errors.)
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -275,7 +275,7 @@ Unordered facts represent data similar to Go maps. They require a template to be
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -323,7 +323,7 @@ It is possible to evaluate CLIPS statements, retrieving their results in Go.
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -368,7 +368,7 @@ In order to overcome some of the limitations of the CLIPS `eval` command, clipsg
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -387,7 +387,7 @@ CLIPS constructs must be defined in CLIPS language. Use the `Load()` or `Build()
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -416,7 +416,7 @@ Variadic functions are also supported.
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
@@ -441,7 +441,7 @@ All of the Go objects created to interact with the CLIPS environment are simple 
 
 ```go
 import (
-    "github.com/keysight/clipsgo/pkg/clips"
+    "github.com/arejula27/clipsgo/pkg/clips"
 )
 
 env := clips.CreateEnvironment()
